@@ -36,6 +36,14 @@ docker -d -v /opt/inputFile:/csvserver/inputdata -p 9393:9300 -e CSVSERVER_BORDE
 
 docker rm $(docker ps -aq)
 
+#one service that is csvserver
+
+vi docker-compse.yml 
+
+docker-compose up -d
+
+# http://52.66.149.223:9393 
+
 
 
 
