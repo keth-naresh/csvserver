@@ -44,6 +44,28 @@ docker-compose up -d
 
 # http://52.66.149.223:9393 
 
+#part -3
+
+docker rm $(docker ps -aq)
+
+#i add promotheus service to docker-compose-part3
+
+# i configure promotheus.yml located /etc/promotheus/promotheus.yml
+# under static-configs  -targets[ 52.66.149.223:9393/metrics]
+
+# 52.66.149.223:9090
+
+#i pass querry csvserver_records 
+
+# it shows ===> csvserver_records{csv_identifier="Y3N2c2VydmVyIGdlbmVyYXRlZCBhdDogMTYzNTkzNzQ4Nw==", instance="52.66.149.223:9393", job="csvserver-monitor"}
+#10 
+
+
+
+
+
+
+
 
 
 
