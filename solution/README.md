@@ -16,6 +16,8 @@ chmod 555 inputFile (read,execute)
 docker run -d -v /opt/inputFile:/csvserver/inputdata/ --name infra infracloudio/csvserver
 
 docker ps
+docker stop infra
+docker rm infra
 
 docker -d -v /opt/inputFile:/csvserver/inputdata -p 9393:9300 --name infra infracloudio/csvserver
 
